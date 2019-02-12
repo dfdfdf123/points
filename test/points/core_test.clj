@@ -3,5 +3,5 @@
             [points.core :refer :all]))
 
 (deftest a-test
-  (testing "FIXME, I fail."
+  (testing "make-point"
     (is (= 0 1))))
