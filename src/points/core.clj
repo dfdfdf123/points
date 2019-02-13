@@ -1,4 +1,5 @@
-(ns points.core)
+(ns points.core 
+  (:require [points.util :refer :all]))
 
 (defn make-point [x y] (list x y))
 
@@ -27,4 +28,4 @@
 (defn calc-distance [p1 p2]
   (let [x (square (- (get-x p2) (get-x p1))) 
         y (square (- (get-y p2) (get-y p1)))]
-    (sqrt (+ x y))))
+    (Math/sqrt (+ x y))))
